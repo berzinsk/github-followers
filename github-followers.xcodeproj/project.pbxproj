@@ -54,14 +54,22 @@
 		129D183F299E564700B6B36C /* github-followers */ = {
 			isa = PBXGroup;
 			children = (
-				129D1840299E564700B6B36C /* AppDelegate.swift */,
-				129D1842299E564700B6B36C /* SceneDelegate.swift */,
+				129D1855299E5E5F00B6B36C /* Support */,
 				129D1844299E564700B6B36C /* ViewController.swift */,
-				129D1849299E564900B6B36C /* Assets.xcassets */,
-				129D184B299E564900B6B36C /* LaunchScreen.storyboard */,
 				129D184E299E564900B6B36C /* Info.plist */,
 			);
 			path = "github-followers";
+			sourceTree = "<group>";
+		};
+		129D1855299E5E5F00B6B36C /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				129D1840299E564700B6B36C /* AppDelegate.swift */,
+				129D1842299E564700B6B36C /* SceneDelegate.swift */,
+				129D1849299E564900B6B36C /* Assets.xcassets */,
+				129D184B299E564900B6B36C /* LaunchScreen.storyboard */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
