@@ -63,10 +63,17 @@ class SearchViewController: UIViewController {
         layoutUI()
     }
 
+    @objc private func getFollowersTapped() {
+        let followerListVC = FollowerListViewController()
+        navigationController?.pushViewController(followerListVC, animated: true)
+    }
+
     private func layoutUI() {
         view.addSubview(logoImageView)
         view.addSubview(searchField)
         view.addSubview(getFollowersButton)
+
+        getFollowersButton.addTarget(self, action: #selector(getFollowersTapped), for: .touchUpInside)
 
         NSLayoutConstraint.activate([
             logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
