@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		129D1841299E564700B6B36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129D1840299E564700B6B36C /* AppDelegate.swift */; };
 		129D1843299E564700B6B36C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129D1842299E564700B6B36C /* SceneDelegate.swift */; };
-		129D1845299E564700B6B36C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129D1844299E564700B6B36C /* ViewController.swift */; };
+		129D1845299E564700B6B36C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129D1844299E564700B6B36C /* SearchViewController.swift */; };
 		129D184A299E564900B6B36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129D1849299E564900B6B36C /* Assets.xcassets */; };
 		129D184D299E564900B6B36C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129D184B299E564900B6B36C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,7 +18,7 @@
 		129D183D299E564700B6B36C /* github-followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "github-followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		129D1840299E564700B6B36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		129D1842299E564700B6B36C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		129D1844299E564700B6B36C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		129D1844299E564700B6B36C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		129D1849299E564900B6B36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		129D184C299E564900B6B36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		129D184E299E564900B6B36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				129D1855299E5E5F00B6B36C /* Support */,
-				129D1844299E564700B6B36C /* ViewController.swift */,
+				129D1844299E564700B6B36C /* SearchViewController.swift */,
 				129D184E299E564900B6B36C /* Info.plist */,
 			);
 			path = "github-followers";
@@ -142,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				129D1845299E564700B6B36C /* ViewController.swift in Sources */,
+				129D1845299E564700B6B36C /* SearchViewController.swift in Sources */,
 				129D1841299E564700B6B36C /* AppDelegate.swift in Sources */,
 				129D1843299E564700B6B36C /* SceneDelegate.swift in Sources */,
 			);
