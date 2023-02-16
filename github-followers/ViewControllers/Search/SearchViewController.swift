@@ -8,6 +8,8 @@
 import UIKit
 
 class SearchViewController: UIViewController {
+    weak var coordinator: AppCoordinator?
+
     private lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "gh-logo")
@@ -64,8 +66,7 @@ class SearchViewController: UIViewController {
     }
 
     @objc private func getFollowersTapped() {
-        let followerListVC = FollowerListViewController()
-        navigationController?.pushViewController(followerListVC, animated: true)
+        coordinator?.getFollowers()
     }
 
     private func layoutUI() {

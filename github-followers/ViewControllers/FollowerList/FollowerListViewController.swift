@@ -8,6 +8,7 @@
 import UIKit
 
 class FollowerListViewController: UIViewController {
+    weak var coordinator: AppCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
