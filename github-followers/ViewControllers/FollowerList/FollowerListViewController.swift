@@ -8,7 +8,7 @@
 import UIKit
 
 class FollowerListViewController: UIViewController {
-    weak var coordinator: AppCoordinator?
+    weak var coordinator: SearchCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()

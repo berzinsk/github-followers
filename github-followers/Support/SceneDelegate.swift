@@ -9,18 +9,16 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-    var coordinator: AppCoordinator?
+    var tabBarController: MainTabBarController?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        let navController = UINavigationController()
-        coordinator = AppCoordinator(navigationController: navController)
-        coordinator?.start()
+        tabBarController = MainTabBarController()
 
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = navController
+        window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()
     }
 

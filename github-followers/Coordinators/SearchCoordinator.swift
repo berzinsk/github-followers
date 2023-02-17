@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppCoordinator: Coordinator {
+class SearchCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
 
     var navigationController: UINavigationController
@@ -19,7 +19,8 @@ class AppCoordinator: Coordinator {
     func start() {
         let vc = SearchViewController()
         vc.coordinator = self
-        navigationController.pushViewController(vc, animated: true)
+        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        navigationController.viewControllers = [vc]
     }
 
     func getFollowers() {
