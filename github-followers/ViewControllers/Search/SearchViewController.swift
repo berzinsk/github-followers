@@ -7,8 +7,8 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
-    weak var coordinator: SearchCoordinator?
+class SearchViewController: UIViewController, Coordinated {
+    weak var coordinator: Coordinator?
 
     private lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()

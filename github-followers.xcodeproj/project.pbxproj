@@ -14,10 +14,10 @@
 		129D184D299E564900B6B36C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 129D184B299E564900B6B36C /* LaunchScreen.storyboard */; };
 		129D185A299E66F000B6B36C /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129D1859299E66F000B6B36C /* FollowerListViewController.swift */; };
 		129D185D299E6D4800B6B36C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129D185C299E6D4800B6B36C /* Coordinator.swift */; };
-		129D1860299E6DCE00B6B36C /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129D185F299E6DCE00B6B36C /* SearchCoordinator.swift */; };
 		12BE3E7B299F45D6008B4FA7 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE3E7A299F45D6008B4FA7 /* FavoritesListViewController.swift */; };
 		12BE3E7E299F477B008B4FA7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE3E7D299F477B008B4FA7 /* MainTabBarController.swift */; };
-		12BE3E80299F496E008B4FA7 /* FavoritesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE3E7F299F496E008B4FA7 /* FavoritesCoordinator.swift */; };
+		12BE3E84299F5E0F008B4FA7 /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE3E83299F5E0F008B4FA7 /* FlowCoordinator.swift */; };
+		12BE3E86299F5F31008B4FA7 /* Coordinated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BE3E85299F5F31008B4FA7 /* Coordinated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +30,10 @@
 		129D184E299E564900B6B36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		129D1859299E66F000B6B36C /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
 		129D185C299E6D4800B6B36C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		129D185F299E6DCE00B6B36C /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
 		12BE3E7A299F45D6008B4FA7 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		12BE3E7D299F477B008B4FA7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		12BE3E7F299F496E008B4FA7 /* FavoritesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCoordinator.swift; sourceTree = "<group>"; };
+		12BE3E83299F5E0F008B4FA7 /* FlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
+		12BE3E85299F5F31008B4FA7 /* Coordinated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				129D185C299E6D4800B6B36C /* Coordinator.swift */,
+				12BE3E85299F5F31008B4FA7 /* Coordinated.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -124,8 +125,7 @@
 		129D185E299E6DBF00B6B36C /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				129D185F299E6DCE00B6B36C /* SearchCoordinator.swift */,
-				12BE3E7F299F496E008B4FA7 /* FavoritesCoordinator.swift */,
+				12BE3E83299F5E0F008B4FA7 /* FlowCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -216,14 +216,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				129D1860299E6DCE00B6B36C /* SearchCoordinator.swift in Sources */,
+				12BE3E86299F5F31008B4FA7 /* Coordinated.swift in Sources */,
+				12BE3E84299F5E0F008B4FA7 /* FlowCoordinator.swift in Sources */,
 				129D185A299E66F000B6B36C /* FollowerListViewController.swift in Sources */,
 				12BE3E7E299F477B008B4FA7 /* MainTabBarController.swift in Sources */,
 				129D1845299E564700B6B36C /* SearchViewController.swift in Sources */,
 				129D185D299E6D4800B6B36C /* Coordinator.swift in Sources */,
 				129D1841299E564700B6B36C /* AppDelegate.swift in Sources */,
 				12BE3E7B299F45D6008B4FA7 /* FavoritesListViewController.swift in Sources */,
-				12BE3E80299F496E008B4FA7 /* FavoritesCoordinator.swift in Sources */,
 				129D1843299E564700B6B36C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

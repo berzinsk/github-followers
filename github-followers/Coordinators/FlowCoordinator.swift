@@ -2,25 +2,20 @@
 //  AppCoordinator.swift
 //  github-followers
 //
-//  Created by Karlis Berzins on 16/02/2023.
+//  Created by Karlis Berzins on 17/02/2023.
 //
 
 import UIKit
 
-class SearchCoordinator: Coordinator {
+class FlowCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
-
     var navigationController: UINavigationController
 
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController = UINavigationController(), child: Coordinated, tabBarItem: UITabBarItem) {
         self.navigationController = navigationController
-    }
-
-    func start() {
-        let vc = SearchViewController()
-        vc.coordinator = self
-        vc.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
-        navigationController.viewControllers = [vc]
+        child.coordinator = self
+        child.tabBarItem = tabBarItem
+        navigationController.viewControllers = [child]
     }
 
     func getFollowers() {

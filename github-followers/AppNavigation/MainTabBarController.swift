@@ -8,16 +8,13 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
-    private let search = SearchCoordinator(navigationController: UINavigationController())
-    private let favorites = FavoritesCoordinator(navigationController: UINavigationController())
+    private let search = FlowCoordinator(child: SearchViewController(), tabBarItem: UITabBarItem(tabBarSystemItem: .search, tag: 0))
+    private let favorites = FlowCoordinator(child: FavoritesListViewController(), tabBarItem: UITabBarItem(tabBarSystemItem: .favorites, tag: 1))
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         UITabBar.appearance().tintColor = .systemGreen
-
-        search.start()
-        favorites.start()
 
         viewControllers = [search.navigationController, favorites.navigationController]
     }

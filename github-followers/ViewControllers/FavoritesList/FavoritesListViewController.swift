@@ -7,8 +7,8 @@
 
 import UIKit
 
-class FavoritesListViewController: UIViewController {
-    weak var coordinator: FavoritesCoordinator?
+class FavoritesListViewController: UIViewController, Coordinated {
+    weak var coordinator: Coordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
